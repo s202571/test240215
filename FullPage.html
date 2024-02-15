@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FullPage</title>
+        <link rel="stylesheet" href="./jquery.fullPage.css">
+        <script src="./jquery.fullPage.js"></script>
+    <style>
+        .wrap .bg {width: 100vw; height: 100vh;}
+        .wrap .bg1 {background: paleturquoise;}
+        .wrap .bg2 {background: salmon;}
+        .wrap .bg3 {background: plum;}
+        .wrap .bg4 {background: darkgrey;}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="bg bg1"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+    $('.wrap').fullpage({
+        scrollBar:true,
+        navigation:true,
+    })
+    </script>
+</body>
+</html>
